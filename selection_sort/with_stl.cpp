@@ -9,13 +9,13 @@ string selection(string s) {
 		int mx = max_element(begin(str) + i, end(str)) - begin(str);
 		swap(str[i], str[mx]);	
 	}
-	return str;
 
+	return str;
 }
 
 int main() {
 	string s = "zadsadaaabbbczkklx";
-	cout << selection(s) << endl;	
-
+	selection(s);	
+	
 	return 0;
 }
