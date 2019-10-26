@@ -3,19 +3,19 @@
 
 using namespace std;
 
-void selection(string &str) {
-
+string selection(string s) {
+	string str = s;
 	for(int i = 0; i < str.size(); i++) {	
 		int mx = max_element(begin(str) + i, end(str)) - begin(str);
 		swap(str[i], str[mx]);	
 	}
-
-	cout << str << endl;
+	return str;
 
 }
 
 int main() {
 	string s = "zadsadaaabbbczkklx";
-	selection(s);	
+	cout << selection(s) << endl;	
+
 	return 0;
 }
